@@ -1,17 +1,18 @@
 import numpy as np
 import text_functions as tf
 import nltk
-
+nltk.download('wordnet')
 #@author: The first version of this code is the courtesy of Vadim Selyanik
 
 threshold = 15000 # Frequency threshold in the corpus ??
-dimension = 2000 # Dimensionality for high-dimensional vectors
+dimension = 2 # Dimensionality for high-dimensional vectors
+
 lemmatizer = nltk.WordNetLemmatizer()  # create an instance of lemmatizer
 ones_number = 2 # number of nonzero elements in randomly generated high-dimensional vectors
 window_size = 2 #number of neighboring words to consider both back and forth. In other words number of words before/after current word
 zero_vector = np.zeros(dimension)
-test_name = "new_toefl.txt" # file with TOEFL dataset
-data_file_name = "lemmatized.text" # file with the text corpus
+test_name = 'C:/Users/malko/Desktop/Skola/D7041E-labs/lab2/Lab2/Lab2/RI/new_toefl.txt'          # file with TOEFL dataset
+data_file_name = 'C:/Users/malko/Desktop/Skola/D7041E-labs/lab2/Lab2/Lab2/RI/lemmatized.text'   # file with the text corpus
 
 amount_dictionary = {}
 

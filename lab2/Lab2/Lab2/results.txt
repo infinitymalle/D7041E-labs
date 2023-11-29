@@ -1,0 +1,38 @@
+Gensim
+
+For each dimension three simulations were run.
+The accuracy between each simulation run with the same dimension often differed with only a small percentage.
+
+# 1 dimensions give     81.25%  82.5%   73.75%
+# 10 dimensions give    56.25%  51.25%  50.0%
+# 100 dimensions give   72.5%   75.0%   71.25%
+# 1000 dimensions give  71.25%  68.75%  71.25%
+
+# 5 dimensions give     40.0%   36.25%  42.5%
+# 50 dimensions give    70.0%   66.25%  68.75%
+# 500 dimensions give   70.0%   72.5%   68.75%
+# 5000 dimensions give  71.25%  72.5%   70.0%
+
+The accuracy is generally increasing with the increase in dimensions.
+At higher dimensions the accuracy stabilizes and almost plateaus with the increasing dimensions.
+The reason for very low dimensions performing well could be that the code is faulty when it comes
+to lower dimensions, such as 1.
+The accuracy of the simulations also seems sensitive to certain dimensions, as can be seen at 
+10 dimensions where we witness a 5% variation in accuracy, but could also be due to randomness.
+
+RI
+
+# 1 dimensions give     97.5%  98.75% 97.5%
+# 10 dimensions give    40.0%  40.0%  43.75%
+# 100 dimensions give   58.75% 62.5%  61.25%
+# 1000 dimensions give  75.0%  73.75% 73.75%  
+
+# 5 dimensions give     23.75%  35.0%  32.5%
+# 50 dimensions give    48.75%  51.25% 62.5%
+# 500 dimensions give   70.0%   75.0%  71.25%
+# 5000 dimensions give  73.75%  73.75% 75.0%
+
+
+
+
+
